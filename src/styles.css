@@ -1,0 +1,36 @@
+body {
+  background-color: #3498db;
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  margin: auto;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  margin: auto;
+  width: 80vw;
+}
+
+a {
+  color: #f1c40f;
+  text-decoration: none;
+  position: relative;
+}
+
+a::before {
+  background-color: #f1c40f;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: width 0.5s ease-in-out;
+  width: 0;
+}
+
+a:hover::before {
+  width: 100%;
+}
